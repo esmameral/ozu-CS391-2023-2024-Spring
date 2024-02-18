@@ -2,21 +2,25 @@
 <html>
 <head>
       <meta charset="UTF-8">
-      <title>Title of the document</title>
+      <title>Define a new course</title>
 </head>
 <body>
+    <a href="index.html" ><img src="./images/ou_logo_eng.jpg"></a>
     <form action="success.html" method="get">
         <b>Course Code:</b> <input type="text" name="courseCode" id="courseCode" required
-          minlength="4" maxlength="6"
-        >
+          minlength="4" maxlength="6">
         <br/>
-     <input type="text" name="courseName" id="courseName" 
-        required minlength="5" maxlength="100" placeholder="Enter course name">
+        <b>Course Name:</b><input type="text" name="courseName" id="courseName" 
+        required minlength="5" maxlength="100" size="50" placeholder="Enter course name">
+        <br/>
+        <b>Description:</b> <textarea name="description" id="desc" cols="40" rows="5">
+
+        </textarea>
         <br/>
         <b>Credit:</b> <input type="number" name="credit" id="credit" min="2" max="8">
         <br/>
         <b>Instructor:</b> 
-        <select name="instructor" size="10" multiple="multiple" id="instructor">
+        <select name="instructor"  id="instructor">
             <option value="Hasan">Hasan Sözer</option>
             <option value="Reyhan">Reyhan Aydoğan</option>
             <option value="Kubra">Kubra Kalkan</option>
@@ -24,11 +28,11 @@
             <option value="Deniz">Deniz Can</option>
             <option value="Ali">Ali Karaman</option>
         </select>
-        <input type="color" name="color" />
         
         <br/>
         <input type="submit"  value="Create" name="create" >
         
     </form>
+    
 </body>
 </html>
