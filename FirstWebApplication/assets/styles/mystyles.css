@@ -1,0 +1,27 @@
+p {
+    text-align: justify;
+    color: blue;
+    font-family: arial;
+    font-size: 14px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #A30050
+}
+
+#history {
+    font-weight: normal;
+    font-size: 14px;
+    color: aqua ;
+}
+
+.example {
+    border-style: solid;
+    font-size: 20px;
+    
+}
+    
+

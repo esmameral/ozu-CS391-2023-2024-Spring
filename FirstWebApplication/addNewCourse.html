@@ -5,15 +5,19 @@
       <title>Define a new course</title>
 </head>
 <body>
-    <a href="index.html" ><img src="./images/ou_logo_eng.jpg"></a>
+    <a href="index.html" >
+        <img src="./assets/images/ou_logo_eng.jpg">
+    </a>
     <form action="success.html" method="get">
-        <b>Course Code:</b> <input type="text" name="courseCode" id="courseCode" required
-          minlength="4" maxlength="6">
+        <b>Course Code:</b> 
+        <input type="text" name="courseCode" id="courseCode" 
+        required  minlength="4" maxlength="6">
         <br/>
         <b>Course Name:</b><input type="text" name="courseName" id="courseName" 
         required minlength="5" maxlength="100" size="50" placeholder="Enter course name">
         <br/>
-        <b>Description:</b> <textarea name="description" id="desc" cols="40" rows="5">
+        <b>Description:</b> 
+        <textarea name="description" id="desc" cols="50" rows="5">
 
         </textarea>
         <br/>
@@ -31,6 +35,7 @@
         
         <br/>
         <input type="submit"  value="Create" name="create" >
+        
         
     </form>
     
