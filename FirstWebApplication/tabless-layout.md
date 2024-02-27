@@ -1,5 +1,5 @@
 
-1. copy main.txt into a new empty html file
+1. copy main.txt into a new html file
 
 ![dom tree](assets/images/dom_tree.png).
 

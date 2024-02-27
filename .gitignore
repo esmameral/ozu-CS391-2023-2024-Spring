@@ -128,3 +128,7 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+CSSExamples/css-layout-example.html
+CSSExamples/layout2.html
+CSSExamples/styles/formats.css
+CSSExamples/styles/layout.css
