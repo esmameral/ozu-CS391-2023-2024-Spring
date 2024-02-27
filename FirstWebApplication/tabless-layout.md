@@ -1,7 +1,7 @@
 
 1. copy main.txt into a new empty html file
 
-![dom tree](./assets/images/dom_tree.png).
+![dom tree](assets/images/dom_tree.png).
 
 2. style the header 
 
