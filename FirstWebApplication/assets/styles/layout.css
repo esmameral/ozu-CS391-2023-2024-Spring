@@ -43,7 +43,6 @@ header a:hover {
 
 /* Create two unequal columns that floats next to each other */
 .column {
-   
     float: left;
     padding: 10px;
 }
@@ -61,10 +60,8 @@ header a:hover {
 /* Clear floats after the columns */
 footer {
     color: black;
-    
     background-color: #ddd;
-    
-    padding: 3px;
+    padding: 5px;
     margin: 0;
     clear:both;
     width: 100%;
@@ -72,8 +69,7 @@ footer {
 }
 
 footer div {
-    width: 30%;
-   
+    width: 31%;
     margin: 10px;
 }
 
