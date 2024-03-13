@@ -9,9 +9,10 @@
             crossorigin="anonymous">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
             crossorigin="anonymous"></script>
+      <script src="./assets/scripts/functions.js"></script>
 </head>
 
-<body>
+<body onload="printCourses()">
       <header class="p-3 bg-dark text-white">
             <div class="container">
                   <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -35,6 +36,9 @@
             </div>
       </header>
 
+    
+
+
       <div class="jumbotron text-center">
             <h1>Courses</h1>
 
@@ -42,39 +46,12 @@
 
 
       <div class="container">
-            <div class="row">
-                  <div class="col-6 col-md-4 col-lg-3">
-                        <h3>Course 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-3">
-                        <h3>Course 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-3">
-                        <h3>Course 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-3">
-                        <h3>Course 4</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-3">
-                        <h3>Course 5</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-3">
-                        <h3>Course 6</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-3">
-                        <h3>Course 7</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  </div>
-                  <div class="col-6 col-md-4 col-lg-3">
-                        <h3>Course 8</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-                  </div>
+            <div class="row" id="courseList">
+                
+                       initidal data
+                  
+                  
+                 
             </div>
 
       </div>

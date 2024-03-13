@@ -7,8 +7,9 @@
 <body>
     <a href="index.html" >
         <img src="./assets/images/ou_logo_eng.jpg">
+        <script src="./assets/scripts/functions.js"></script>
     </a>
-    <form action="success.html" method="get">
+    <form onsubmit="return validateFormData();" action="success.html" method="get">
         <b>Course Code:</b> 
         <input type="text" name="courseCode" id="courseCode" 
         required  minlength="4" maxlength="6">
