@@ -52,11 +52,13 @@ function saveDataInTheLocalStorage(){
         localStorage.setItem("user2","Senem");
         var userList = [{ "id": "123", "name": "ali", "email": "ali@ozu.edu.tr" },
         { "id": "234", "name": "hasan", "email": "hasan@ozu.edu.tr" }];
+        
         localStorage.setItem("userList", JSON.stringify(userList));
 
         console.log(localStorage.getItem("user2"));
         console.log(localStorage.length);
         console.log(localStorage.key(2));
+        console.log(localStorage.getItem("userList"));
 
     }
 }
