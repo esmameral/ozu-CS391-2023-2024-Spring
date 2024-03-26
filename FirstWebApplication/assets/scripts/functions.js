@@ -37,12 +37,5 @@ function printCourses() {
     }
     
     document.getElementById("courseList").innerHTML = text;
-
-
-   
-  
-   
-
-
-
 }
+
