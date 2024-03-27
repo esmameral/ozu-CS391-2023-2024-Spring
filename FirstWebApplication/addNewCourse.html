@@ -28,14 +28,13 @@
                               <li><a href="https://www.ozyegin.edu.tr/en/student-services/academic-calendar"
                                           target="_blank" class="nav-link px-2 text-white">Academic Calendar</a></li>
                         </ul>
-                        <input type="search" class="form-control-dark">
-                        <button type="button">Search</button>
+                       
 
                   </div>
             </div>
       </header>
 
-    <form onsubmit="return validateFormData();" action="success.html" method="get">
+    <form onsubmit="return saveCourse();" action="success.html" method="get">
         <b>Course Code:</b> 
         <input type="text" name="courseCode" id="courseCode" 
         required  minlength="4" maxlength="6">
