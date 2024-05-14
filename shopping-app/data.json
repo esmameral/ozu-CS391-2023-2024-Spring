@@ -1,0 +1,98 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Laptop Stand",
+      "price": "$49.99",
+      "description": "Laptop Stand for Desk, Adjustable Computer Stand with 360° Rotating Base, Ergonomic Laptop Riser for Collaborative Work, Foldable & Portable Laptop Stand, fits for All 10-17\" Laptops(Grey"
+    },
+    {
+      "id": 2,
+      "name": "Curved Computer Monitor",
+      "price": "$149.99",
+      "description": "Curved Computer Monitor, AMD FreeSync for Advanced Gaming, 4ms Response Time, Wide Viewing Angle, Ultra Slim Design, LC24F396FHNXZA, Black"
+    },
+    {
+      "id": 3,
+      "name": "Wireless Internet Router",
+      "price": "$154.99",
+      "description": "TP-Link AX5400 WiFi 6 Router (Archer AX73)- Dual Band Gigabit Wireless Internet Router, High-Speed ax Router for Streaming, Long Range Coverage"
+    },
+    {
+      "id": 4,
+      "name": "Bluetooth Earbuds",
+      "price": "$139.99",
+      "description": "Jabra Elite 7 Pro in Ear Bluetooth Earbuds - Adjustable Active Noise Cancellation True Wireless Buds in a Compact Design with Jabra MultiSensor Voice Technology for Clear Calls - Titanium Black"
+  },
+    {
+      "id": 5,
+      "name": "Laptop Backpack",
+      "price": "$22.94",
+      "description": "Monsdle Travel Laptop Backpack Anti Theft Water Resistant Backpacks School Computer Bookbag with USB Charging Port for Men Women College Students Fits 15.6 Inch Laptop (Purple)"
+    },
+    {
+      "id": 6,
+      "name": "External HD",
+      "price": "$84.99",
+      "description": "8TB External Hard Drive SSD, Portable SSD 8TB - Ultra High-Speed SSD External Hard Drive with Reading Speeds up to 500Mb/s, 8 Terabyte External Solid State Drive Storage for Mac/Windows"
+    }
+  ],
+  "reviews": [
+    {
+      "productId": 1,
+      "id": 1,
+      "name": "id labore ex et quam laborum",
+      "email": "Eliseo@gardner.biz",
+      "body": "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus\ndolor quam autem quasi\nreiciendis et nam sapiente accusantium"
+    },
+    {
+      "productId": 1,
+      "id": 2,
+      "name": "quo vero reiciendis velit similique earum",
+      "email": "Jayne_Kuhic@sydney.com",
+      "body": "est natus enim nihil est dolore omnis voluptatem numquam\net omnis occaecati quod ullam at\nvoluptatem error expedita pariatur\nnihil sint nostrum voluptatem reiciendis et"
+    },
+    {
+      "productId": 6,
+      "id": 3,
+      "name": "odio adipisci rerum aut animi",
+      "email": "Nikita@garfield.biz",
+      "body": "quia molestiae reprehenderit quasi aspernatur\naut expedita occaecati aliquam eveniet laudantium\nomnis quibusdam delectus saepe quia accusamus maiores nam est\ncum et ducimus et vero voluptates excepturi deleniti ratione"
+    },
+    {
+      "productId": 2,
+      "id": 4,
+      "name": "alias odio sit",
+      "email": "Lew@alysha.tv",
+      "body": "non et atque\noccaecati deserunt quas accusantium unde odit nobis qui voluptatem\nquia voluptas consequuntur itaque dolor\net qui rerum deleniti ut occaecati"
+    },
+    {
+      "productId": 2,
+      "id": 5,
+      "name": "vero eaque aliquid doloribus et culpa",
+      "email": "Hayden@althea.biz",
+      "body": "harum non quasi et ratione\ntempore iure ex voluptates in ratione\nharum architecto fugit inventore cupiditate\nvoluptates magni quo et"
+    },
+    {
+      "productId": 5,
+      "id": 6,
+      "name": "et fugit eligendi deleniti quidem qui sint nihil autem",
+      "email": "Presley.Mueller@myrl.com",
+      "body": "doloribus at sed quis culpa deserunt consectetur qui praesentium\naccusamus fugiat dicta\nvoluptatem rerum ut voluptate autem\nvoluptatem repellendus aspernatur dolorem in"
+    },
+    {
+      "productId": 3,
+      "id": 7,
+      "name": "repellat consequatur praesentium vel minus molestias voluptatum",
+      "email": "Dallas@ole.me",
+      "body": "maiores sed dolores similique labore et inventore et\nquasi temporibus esse sunt id et\neos voluptatem aliquam\naliquid ratione corporis molestiae mollitia quia et magnam dolor"
+    },
+    {
+      "productId": 4,
+      "id": 8,
+      "name": "et omnis dolorem",
+      "email": "Mallory_Kunze@marie.org",
+      "body": "ut voluptatem corrupti velit\nad voluptatem maiores\net nisi velit vero accusamus maiores\nvoluptates quia aliquid ullam eaque"
+    }
+  ]
+}
