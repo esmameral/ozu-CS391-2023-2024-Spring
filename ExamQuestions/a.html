@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <title>Samples</title>
+    <script src="scripts/midterm.js"></script>
+    <link rel="stylesheet" href="assets/mystyles.css">
+    <script>
+        let numbers = [1, 2, 5, 6];
+        numbers[4] = 4;
+        numbers[6] = 7;
+        let sum = 0;
+        for (n of numbers) {
+            sum += n;
+        }
+        console.log(sum);
+        var students = [{ id: "S12345", name: "Karen", grade: 87, program: "IE" },
+        { id: "S02345", name: "Ahmet", grade: 43, program: "CS" },
+        { id: "S06915", name: "Alina", grade: 95, program: "IE" },
+        { id: "S06123", name: "Ceren", grade: 73, program: "EE" },
+        { id: "S04781", name: "Hasan", grade: 45, program: "CS" }];
+        var array = students.filter(s => s.program == "CS" || s.name.includes("en") && s.grade > 80);
+        console.log("array:"+array);
+
+        array.forEach((param1, param2) => {
+            let a = 1; 
+            return a + param1 + param2;
+        
+        }
+
+
+
+
+
+        );
+
+    </script>
+    <style>
+        p {
+            color: green;
+        }
+
+       
+        .xyz {
+            color: blue;
+        }
+
+
+
+
+        ul>li {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="color:yellow">ANKARA</p>
+    <p id="abc">İSTANBUL</p>
+    <p class="xyz">BURSA</p>
+    <p class="abc">İZMİR</p>
+    <p>ANTALYA</p>
+
+    <h2 id="header">Welcome to My Homepage</h2>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. </p>
+    <div id="list"></div>
+    <script>
+        var text = "<select multiple size=4>";
+        students.forEach(s => text += "<option value='" + s.id + "'>" + s.name + "</option>");
+        text += "</select>";
+        document.getElementById("list").innerHTML = text;
+
+        const array3 = [100, 9, 1, 400];
+        const array4 = array3.map(x => x < 10 ? Math.pow(x, 2) : Math.sqrt(x)).filter(x => x > 10);
+        console.log("array4:" + array4);
+
+    </script>
+    <br />
+    <br />
+    <br />
+    <form action="/register" method="POST" onSubmit="return validateForm();">
+        <input type="text" name="uname" id="username" placeholder="Username">
+        <br />
+        <input type="password" name="upass" id="password" placeholder="Password">
+        <br />
+        <input type="password" name="urepass" id="repassword" placeholder="Re-enter password">
+        <br />
+        <input type="text" name="fname" id="fullname" placeholder="Fullname">
+        <br />
+        <input type="submit" value="Register Me">
+    </form>
+
+    <div>
+
+
+        <ol>
+            <li>Products
+                <ul>
+                    <div>
+                        <li>Notebook</li>
+                        <li>Phone</li>
+                        <li>Tablet
+                            <ul>
+                                <li>256 GB</li>
+                                <li>64 GB</li>
+                                <li>16 GB</li>
+                            </ul>
+                        </li>
+                    </div>
+                </ul>
+            </li>
+            <li>Customers
+                <ul>
+                    <li>Ahmet</li>
+                    <li>Ceren</li>
+                    <li>Alina</li>
+                </ul>
+            </li>
+        </ol>
+
+    </div>
+    <p>bb</p>
+
+</body>
+
+</html>

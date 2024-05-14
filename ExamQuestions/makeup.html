@@ -1,0 +1,184 @@
+<html>
+
+<head>
+    <title>Samples</title>
+    <script src="scripts/midterm.js"></script>
+    <link rel="stylesheet" href="assets/mXXystyles.css">
+    <script>
+        hello = val => "Hello " + (val == undefined ? "Guest" : val);
+        console.log(hello("Emre"));
+        console.log(hello());
+
+        var names = ["ali", "demet", "kenan", "hakan","canan"];
+names.sort();
+names.push("Ayes");
+names.pop();
+for(var i=0;i<names.length;i++){
+      console.log("i:"+i+"=>"+names[i])
+      i++;
+}
+
+/*
+        var names = ["Kenan", "Murat", "Zerrin", "Hasan", "Canan"];
+        names.sort();
+
+        names.pop();
+        names.push("Aynur");
+        for (var i = 0; i < names.length; i++) {
+            console.log("i:" + i + "=>" + names[i])
+            i++;
+        }
+*/
+
+    </script>
+    <style>
+       #x1 {
+            float: right;
+        }  
+        #x2 {   
+            clear: both; 
+        }
+        body { 
+    color: blue;  }
+  h2 {
+    color: green;  }
+  p {
+    color: red;  }
+
+    </style>
+</head>
+
+<body>
+
+    <h2>This is a Heading</h2>
+    <p>This is a paragraph</p>
+    <div>This is a div</div> 
+
+    <p id="x1">AAAAA</p>
+    <p id="x2">BBBBB</p>
+
+    <BR />
+    <p id="x3" style="color:yellow">ANKARA</p>
+    <p id="abc">İSTANBUL</p>
+    <p class="xyz">BURSA</p>
+    <p class="abc">İZMİR</p>
+    <p>ANTALYA</p>
+
+    <div id="list"></div>
+    <script>
+     var accounts = [{ id: "12345", name: "Karen", balance: 200, currency: "USD" },
+        { id: "32345", name: "Ahmet", balance: 4300, currency: "TL" },
+        { id: "34695", name: "Alina", balance: 600, currency: "USD" },
+        { id: "27613", name: "Ceren", balance: 6700, currency: "TL" },
+        { id: "12471", name: "Hasan", balance: 8000, currency: "TL" }];
+
+        const initialValue = 0;
+var sum = accounts.filter(a => a.currency == "USD").reduce((prevValue, a) => 
+                                      prevValue + a.balance, initialValue);
+console.log("SUM:"+sum);
+
+
+        var text = "<table border='1px'>";
+        accounts.forEach(s => {
+            balanceTL = (s.currency == "USD" ? s.balance * 30 : s.balance);
+            text += "<tr><td>" + s.name + "</td><td>" + balanceTL + "</td></tr>";
+            return text;
+        });
+        text += "</table>";
+        document.getElementById("list").innerHTML = text;
+        
+        const array4 = accounts.filter(a => a.currency == "USD");
+        var sumWithInitial = 0;
+        sumWithInitial = array4.reduce((prevValue, a) => {
+            console.log("prevValue:" + prevValue);
+            return prevValue + a.balance
+        }, initialValue);
+
+        console.log(sumWithInitial);
+        console.log("array4:" + array4);
+
+
+    </script>
+    <br />
+    <br />
+    <br />
+    <form action="/register" method="POST" >
+        Username:<input type="text" name=" username " id="username">
+        <br>
+        Password:<input type="password" name=" password " id="password">
+        <br>
+        Email :<input type="email" name="email" id="email">
+        <br>
+        <input type="submit" value="Register Me">
+   
+    </form>
+
+
+        <input type="number"  id="number1" placeholder="Enter first value"  >
+        <input type="number"  id="number2" placeholder="Enter second value" >
+        <br>
+        <button onclick="calculate('A')">Add</button>
+        <button onclick="calculate('S')">Subtract</button>
+        <button onclick="calculate('M')">Multiply</button>
+        <button onclick="calculate('D')">Divide</button>
+        <button onclick="clearPage()">Clear</button>
+        <br>
+        Result:<span id="result"></span>
+   
+
+    <div>
+        <table border="1px"></table>
+
+        <ol>
+            <li>Products
+                <ul>
+                    <li>Notebook</li>
+                    <li>Phone</li>
+                    <li>Tablet
+                        <ul>
+                            <li>256 GB</li>
+                            <li>64 GB</li>
+                            <li>16 GB</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Customers
+                <ul>
+                    <li>Ahmet</li>
+                    <li>Ceren</li>
+                    <li>Alina</li>
+                </ul>
+            </li>
+        </ol>
+
+        <ul>
+            <li>Names
+                <ol>
+                    <li>Notebook</li>
+                    <li>Phone</li>
+                    
+                </ol>
+            </li>
+            <li>Ages
+                <ol>
+                    <li>18 years</li>
+                    <li>20 years</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p>bb</p>
+<script>
+    function check() {
+    console.log("John");
+    setTimeout(() => console.log("Jame"), 2000);
+    setTimeout(() => console.log("Jane"), 400);
+    console.log("Jack")
+}
+check();
+
+</script>
+</body>
+
+</html>
