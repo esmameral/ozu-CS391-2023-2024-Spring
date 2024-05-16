@@ -6,21 +6,25 @@ import { useState, useEffect } from "react"
 import {ApplicationContext} from "./components/ApplicationContext"
 
 
+
+
+
+
 export default function Home() {
  const [productList, setProductList] = useState([]);
- const [dataLoaded, setDataLoaded] = useState(false);
+ const [productsLoaded, setProductsLoaded] = useState(false);
  
  useEffect(() => { 
-     if(dataLoaded==false){
+     if(productsLoaded==false){
       loadProducts();
      }
  }
  )
-  const title = "My Products are here=>";
+  const title = "My Products are here";
   const myDeleteHandler = (id) => {
     fetch(`http://localhost:8000/products/${id}`,{ method: 'DELETE' })
     .catch(error => { console.log(error) })
-    setDataLoaded(false);
+    setProductsLoaded(false);
   }
 
   const loadProducts = () => {
@@ -28,14 +32,17 @@ export default function Home() {
       .then(response => response.json())
       .then(data => {
         setProductList(data);
-        setDataLoaded(true);
+        setProductsLoaded(true);
       })
       .catch(error => { console.log(error) })
   }
 
+  
 
   return (
     <main >
+  
+
       <ApplicationContext.Provider value={{ data: "Data from context!" }}>
         <ProductCount productCount={productList.length} />
         <Catalog tableHeader={title} productList={productList} onDelete={myDeleteHandler}></Catalog>

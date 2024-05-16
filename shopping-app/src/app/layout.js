@@ -1,17 +1,24 @@
-import Link from "next/link";
+'use client'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Nav, NavItem, NavLink } from "reactstrap";
+
 export default function RootLayout({ children }) {
   return (
     <html>
-
       <body>
         <header><h2>My Shopping Web Application</h2></header>
-        <nav>
-          <ul>
-            <li><Link href="/">Home</Link> </li>
-            <li><Link href="/pages/about">About</Link></li>
-            <li><Link href="/pages/contact">Contact</Link></li>
-          </ul>
-        </nav>
+        <Nav> 
+                <NavItem> 
+                    <NavLink href="/">Home</NavLink> 
+                </NavItem> 
+                <NavItem> 
+                    <NavLink href="/pages/about">About</NavLink> 
+                </NavItem> 
+                <NavItem> 
+                    <NavLink href="/pages/contact">Contact</NavLink> 
+                </NavItem> 
+            </Nav> 
+ 
         {children}
         <footer><h4>Contact us: info@myshopapp.com</h4></footer>
       </body>

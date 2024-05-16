@@ -1,6 +1,6 @@
 'use client'
-import { useState, useEffect,useContext } from "react"
-
+import { useState, useEffect } from "react"
+import { Button } from 'reactstrap';
 
 
 export default function Rate() {
@@ -16,9 +16,9 @@ export default function Rate() {
 
     return (
         <div>
- 
-            <button onClick={() => setLikeCount(likeCount + 1)}>Like {likeCount} </button>
-            <button onClick={() => setDislikeCount(dislikeCount + 1)}>Dislike {dislikeCount}</button>
+            
+            <Button onClick={() => setLikeCount(likeCount + 1)} color="success" size="sm">+{likeCount} </Button>
+            <Button onClick={() => setDislikeCount(dislikeCount + 1)} color="warning" size="sm">-{dislikeCount}</Button>
         </div>
     );
 }

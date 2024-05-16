@@ -7,14 +7,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "json-server":"json-server data.json --watch --port 8000",
+    "json-server": "json-server data.json --watch --port 8000",
     "all": "npm-run-all --parallel dev json-server"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "next": "14.2.2",
     "npm-run-all": "^4.1.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "reactstrap": "^9.2.2"
   },
   "devDependencies": {
     "eslint": "^8",

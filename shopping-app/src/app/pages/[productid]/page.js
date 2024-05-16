@@ -4,10 +4,12 @@ import ReviewForm from "@/app/components/ReviewForm";
 import { useState,useEffect } from "react";
 export default function ProductDetail({params}) {
 
-    const [dataLoaded, setDataLoaded] = useState(false);
+    const [loadReviewsRequired, setLoadReviewsRequired] = useState(true);
     const [reviews, setReviews] = useState([]);
     const [product, setProduct] = useState({});
-
+    const [reviewsLoaded, setReviewsLoaded] = useState(false);
+ 
+    
 
     const loadProduct = (id) => {
         fetch(`http://localhost:8000/products/${id}`)
@@ -23,8 +25,22 @@ export default function ProductDetail({params}) {
             .then(response => response.json())
             .then(data => {
                 setReviews(data);
+                setReviewsLoaded(true);
             }
-            )
+        )
+    }
+
+    const addReview =(review)=>{
+        const options={ 
+          method: 'POST',
+          body:JSON.stringify(review),
+          headers: new Headers({'Content-Type': 'application/json'})
+         }
+        fetch(`http://localhost:8000/reviews`,options )
+        .then(response => response.json())
+        .then(()=>console.log(data))
+        .catch(error => { console.log(error) })
+        setReviewsLoaded(false);
     }
 
     useEffect(() => {
@@ -32,12 +48,16 @@ export default function ProductDetail({params}) {
 
     }, [params.productId]);
     
-    useEffect(() => {
-        loadReviews(params.productid);
-    }, []);
+    
 
+    useEffect(() => { 
+        if(reviewsLoaded==false){
+            loadReviews(params.productid);
+        }
+    }
+    )
     return (<div>
-        detail page - dynamic
+        
         <Rate2/>
      
          <p><b>Name:</b>{product.name}</p>
@@ -47,13 +67,13 @@ export default function ProductDetail({params}) {
          <ol>
             {reviews.map((item, index) => {
                 return (<>
-                    <li>(<b>{item.email}</b>) : {item.body}</li>
+                    <li>{item.reviewText}</li>
                    
                 </>
                 );
             })}
         </ol>
-            <ReviewForm productId={params.productid}/>
+            <ReviewForm productId={params.productid} onAddReview={addReview}/>
     </div>
 
     );
